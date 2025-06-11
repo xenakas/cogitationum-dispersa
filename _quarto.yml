@@ -23,5 +23,5 @@ format:
     documentclass: scrartcl
     toc: true
     number-sections: true
-    mainfont: "Times New Roman"
+    mainfont: "Libertinus Serif"
     lang: en

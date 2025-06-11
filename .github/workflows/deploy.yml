@@ -7,23 +7,21 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
+      # 🆕 Устанавливаем TinyTeX
       - name: Install TinyTeX
         run: |
-          sudo apt-get update
-          sudo apt-get install -y wget
-          wget -qO- https://yihui.org/tinytex/install-bin-unix.sh | sh
-          echo "export PATH=$HOME/bin:\$PATH" >> $GITHUB_ENV
-
+          quarto install tinytex
+          echo "TinyTeX installed"
       - name: Render HTML and PDF
         run: |
           quarto render --to html
           quarto render --to pdf
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
