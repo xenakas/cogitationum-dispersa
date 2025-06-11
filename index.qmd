@@ -1,0 +1,12 @@
+---
+title: "Cogitationum Dispersa"
+format:
+  html: default
+  pdf:
+    mainfont: "Times New Roman"
+    lang: en
+---
+
+# Welcome
+
+This is a curated collection of notes in economics, mathematics, statistics, econometrics, and machine learning. It includes both theoretical insights and applied case studies. While the primary language is English, some notes may include sections in Russian when contextually appropriate.

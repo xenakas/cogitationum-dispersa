@@ -1,0 +1,12 @@
+---
+title: "Case Studies"
+format:
+  html: default
+  pdf:
+    mainfont: "Times New Roman"
+    lang: en
+---
+
+# Applied Case Studies
+
+Practical applications and analyses based on real-world data. Includes demand forecasting, segmentation models, and market simulations.

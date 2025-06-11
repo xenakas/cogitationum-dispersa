@@ -1,0 +1,15 @@
+---
+title: "Economics"
+format:
+  html: default
+  pdf:
+    mainfont: "Times New Roman"
+    lang: en
+---
+
+# Theoretical Foundations of Economics
+
+This section contains theoretical notes related to microeconomics, game theory, industrial organization, and market equilibrium modeling. Occasionally includes references in Russian.
+
+
+Проверка на вшивость

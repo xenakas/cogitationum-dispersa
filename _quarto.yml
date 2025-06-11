@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Cogitationum Dispersa"
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Theory"
+        file: theory/economics/index.qmd
+      - text: "Case Studies"
+        file: cases/index.qmd
+      - text: "Reference"
+        file: reference/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    number-sections: true
+    mainfont: "Times New Roman"
+    lang: en

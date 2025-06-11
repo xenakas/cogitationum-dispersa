@@ -1,0 +1,12 @@
+---
+title: "Reference"
+format:
+  html: default
+  pdf:
+    mainfont: "Times New Roman"
+    lang: en
+---
+
+# Glossary, Definitions, and Tables
+
+This section serves as a technical appendix for formulas, notation, and frequently used models. May contain some bilingual entries (EN/RU).

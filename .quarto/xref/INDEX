@@ -1,0 +1,18 @@
+{
+  "index.qmd": {
+    "index.html": "c869006b",
+    "index.tex": "06e98ae0"
+  },
+  "theory/economics/index.qmd": {
+    "index.html": "1e4dded1",
+    "index.tex": "b981df15"
+  },
+  "cases/index.qmd": {
+    "index.html": "bcfecc84",
+    "index.tex": "7c375727"
+  },
+  "reference/index.qmd": {
+    "index.html": "458c9a55",
+    "index.tex": "727c8e02"
+  }
+}
