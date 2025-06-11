@@ -2,9 +2,7 @@
 title: "Reference"
 format:
   html: default
-  pdf:
-    mainfont: "Times New Roman"
-    lang: en
+  pdf: default
 ---
 
 # Glossary, Definitions, and Tables

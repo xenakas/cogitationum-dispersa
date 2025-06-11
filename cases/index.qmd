@@ -2,9 +2,7 @@
 title: "Case Studies"
 format:
   html: default
-  pdf:
-    mainfont: "Times New Roman"
-    lang: en
+  pdf: default
 ---
 
 # Applied Case Studies

@@ -2,9 +2,7 @@
 title: "Economics"
 format:
   html: default
-  pdf:
-    mainfont: "Times New Roman"
-    lang: en
+  pdf: default
 ---
 
 # Theoretical Foundations of Economics
