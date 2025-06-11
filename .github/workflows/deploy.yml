@@ -13,11 +13,11 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # 🆕 Устанавливаем TinyTeX
-      - name: Install TinyTeX
+      # 🆕 Установка TeXLive через apt
+      - name: Install TeXLive (basic + fonts)
         run: |
-          quarto install tinytex
-          echo "TinyTeX installed"
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
 
       - name: Render HTML and PDF
         run: |
