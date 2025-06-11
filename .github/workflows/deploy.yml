@@ -7,17 +7,17 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # 🆕 Установка TeXLive через apt
-      - name: Install TeXLive (basic + fonts)
+      - name: Install TinyTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
+          sudo apt-get install -y wget
+          wget -qO- https://yihui.org/tinytex/install-bin-unix.sh | sh
+          echo "export PATH=$HOME/bin:\$PATH" >> $GITHUB_ENV
 
       - name: Render HTML and PDF
         run: |
