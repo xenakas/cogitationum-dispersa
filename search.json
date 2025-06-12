@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "theory/economics/index.html",
-    "href": "theory/economics/index.html",
-    "title": "Economics",
+    "objectID": "theory/statistics/brownian_bridge.html",
+    "href": "theory/statistics/brownian_bridge.html",
+    "title": "Brownian Bridge",
     "section": "",
-    "text": "1 Theoretical Foundations of Economics\nThis section contains theoretical notes related to microeconomics, game theory, industrial organization, and market equilibrium modeling. Occasionally includes references in Russian.\nПроверка на вшивость"
+    "text": "0.1 Brownian Bridge\nIn the most common formulation, the Brownian bridge process is obtained by taking a standard Brownian motion process \\(X\\), restricted to the interval \\([0,1]\\), and conditioning on the event that \\(X_1 = 0\\). Since also \\(X_0 = 0\\), the process is tied down at both ends, and so the process in between forms a bridge. The Brownian bridge turns out to be an interesting stochastic process with surprising applications, including a very important application to statistics.\nThe expected value of the bridge is zero, with variance \\(\\frac{t(T-t)}{T}\\), implying that the most uncertainty is in the middle of the bridge, with zero uncertainty at the nodes. The increments in a Brownian bridge are not independent.\nA Brownian bridge is the result of Donsker’s theorem (a functional extension of the CLT) in the area of empirical processes. It is also used in the Kolmogorov–Smirnov test in the area of statistical inference.\n\n\n\n0.2 Definition\nA Brownian bridge is a stochastic process \\(X = \\{X_t: t \\in [0,1]\\}\\) with state space \\(\\mathbb{R}\\) that satisfies the following properties:\n\n\\(X_0 = 0\\) and \\(X_1 = 0\\) w.p.1\n\n\\(X\\) is a Gaussian process\n\n\\(E(X_t) = 0\\) for \\(t \\in [0,1]\\)\n\n\\(\\text{cov}(X_s, X_t) = \\min\\{s,t\\} - st\\) for \\(s,t \\in [0,1]\\)\n\nw.p.1 \\(t \\mapsto X_t\\) is continuous on \\([0,1]\\)\n\n\n\n0.3 Properties\n\nIf \\(B(t)\\) is a BM and \\(A\\) is any positive number, then \\(\\tilde{B}(t) = A^{1/2} B(t/A)\\) is also a BM.\n\nIf \\(B(t)\\) is a BM, then \\(\\tilde{B}^\\circ(u) = B(u) - u B(1), u \\in [0,1]\\), is a BB.\n\nIf \\(\\{B^\\circ(u)\\}\\) is a BB, then \\(\\tilde{B}(t) = (t + 1) B^\\circ(t/(t + 1))\\) is a BM.\n\nIf \\(\\{B(t)\\}\\) is a BM and \\(T\\) is a fixed positive number, then \\(\\tilde{B}(t) = B(T + t) - B(T)\\) is also a BM and independent of \\(\\{B(s), s \\in [0,T]\\}\\).\n\n\n\n0.4 Applications\n\nBrownian bridge appears as a limit of empirical distributions.\n\nIt can reduce simulation paths, improving computational efficiency when dealing with many underlying factors.\n\nIn path-dependent derivative pricing (e.g., barrier options), Brownian bridge helps estimate “knock-out” probabilities with reduced granularity.\n\n\n\n0.5 References\n\nBrownian Bridge — randomservices.org\n\nDonsker’s Theorem — MIT OCW\n\nLecture PDF on Applications"
   },
   {
-    "objectID": "reference/index.html",
-    "href": "reference/index.html",
-    "title": "Reference",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cogitationum Dispersa",
     "section": "",
-    "text": "1 Glossary, Definitions, and Tables\nThis section serves as a technical appendix for formulas, notation, and frequently used models. May contain some bilingual entries (EN/RU)."
+    "text": "1 Welcome\nThis is a curated collection of notes in economics, mathematics, statistics, econometrics, and machine learning. It includes both theoretical insights and applied case studies. While the primary language is English, some notes may include sections in Russian when contextually appropriate."
   },
   {
     "objectID": "cases/index.html",
@@ -21,10 +21,17 @@
     "text": "1 Applied Case Studies\nPractical applications and analyses based on real-world data. Includes demand forecasting, segmentation models, and market simulations."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Cogitationum Dispersa",
+    "objectID": "reference/index.html",
+    "href": "reference/index.html",
+    "title": "Reference",
     "section": "",
-    "text": "1 Welcome\nThis is a curated collection of notes in economics, mathematics, statistics, econometrics, and machine learning. It includes both theoretical insights and applied case studies. While the primary language is English, some notes may include sections in Russian when contextually appropriate."
+    "text": "1 Glossary, Definitions, and Tables\nThis section serves as a technical appendix for formulas, notation, and frequently used models. May contain some bilingual entries (EN/RU)."
+  },
+  {
+    "objectID": "theory/economics/index.html",
+    "href": "theory/economics/index.html",
+    "title": "Economics",
+    "section": "",
+    "text": "1 Theoretical Foundations of Economics\nThis section contains theoretical notes related to microeconomics, game theory, industrial organization, and market equilibrium modeling. Occasionally includes references in Russian.\nПроверка на вшивость"
   }
 ]
