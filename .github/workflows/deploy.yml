@@ -13,15 +13,10 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # 🆕 Устанавливаем TinyTeX
-      - name: Install TinyTeX
-        run: |
-          quarto install tinytex
-          echo "TinyTeX installed"
-      - name: Render HTML and PDF
+      - name: Render HTML
         run: |
           quarto render --to html
-          quarto render --to pdf
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
