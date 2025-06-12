@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "theory/economics/index.html",
+    "href": "theory/economics/index.html",
+    "title": "Economics",
+    "section": "",
+    "text": "1 Theoretical Foundations of Economics\nThis section contains theoretical notes related to microeconomics, game theory, industrial organization, and market equilibrium modeling. Occasionally includes references in Russian.\nПроверка на вшивость"
+  },
+  {
+    "objectID": "reference/index.html",
+    "href": "reference/index.html",
+    "title": "Reference",
+    "section": "",
+    "text": "1 Glossary, Definitions, and Tables\nThis section serves as a technical appendix for formulas, notation, and frequently used models. May contain some bilingual entries (EN/RU)."
+  },
+  {
+    "objectID": "cases/index.html",
+    "href": "cases/index.html",
+    "title": "Case Studies",
+    "section": "",
+    "text": "1 Applied Case Studies\nPractical applications and analyses based on real-world data. Includes demand forecasting, segmentation models, and market simulations."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cogitationum Dispersa",
+    "section": "",
+    "text": "1 Welcome\nThis is a curated collection of notes in economics, mathematics, statistics, econometrics, and machine learning. It includes both theoretical insights and applied case studies. While the primary language is English, some notes may include sections in Russian when contextually appropriate."
+  }
+]
