@@ -18,5 +18,16 @@
   "theory/statistics/brownian_bridge.qmd": {
     "brownian_bridge.html": "52509043",
     "brownian_bridge.tex": "e91907cf"
+  },
+  "theory/statistics/stochastic-processes/index.qmd": {
+    "index.html": "1d06b6cd"
+  },
+  "theory/statistics/stochastic-processes/brownian_bridge.qmd": {
+    "brownian_bridge.html": "b31cde46",
+    "brownian_bridge.tex": "3bc9d5e7"
+  },
+  "theory/statistics/index.qmd": {
+    "index.html": "99af029c",
+    "index.tex": "a7368d95"
   }
 }

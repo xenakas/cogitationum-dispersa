@@ -14,11 +14,53 @@
     "text": "1 Applied Case Studies\nPractical applications and analyses based on real-world data. Includes demand forecasting, segmentation models, and market simulations."
   },
   {
-    "objectID": "theory/statistics/brownian_bridge.html",
-    "href": "theory/statistics/brownian_bridge.html",
+    "objectID": "theory/statistics/index.html",
+    "href": "theory/statistics/index.html",
+    "title": "Theory",
+    "section": "",
+    "text": "Brownian Bridge"
+  },
+  {
+    "objectID": "theory/statistics/index.html#stochastic-processes",
+    "href": "theory/statistics/index.html#stochastic-processes",
+    "title": "Theory",
+    "section": "",
+    "text": "Brownian Bridge"
+  },
+  {
+    "objectID": "theory/statistics/stochastic-processes/brownian_bridge.html",
+    "href": "theory/statistics/stochastic-processes/brownian_bridge.html",
     "title": "Brownian Bridge",
     "section": "",
-    "text": "0.1 Brownian Bridge\nIn the most common formulation, the Brownian bridge process is obtained by taking a standard Brownian motion process \\(X\\), restricted to the interval \\([0,1]\\), and conditioning on the event that \\(X_1 = 0\\). Since also \\(X_0 = 0\\), the process is tied down at both ends, and so the process in between forms a bridge. The Brownian bridge turns out to be an interesting stochastic process with surprising applications, including a very important application to statistics.\nThe expected value of the bridge is zero, with variance \\(\\frac{t(T-t)}{T}\\), implying that the most uncertainty is in the middle of the bridge, with zero uncertainty at the nodes. The increments in a Brownian bridge are not independent.\nA Brownian bridge is the result of Donsker’s theorem (a functional extension of the CLT) in the area of empirical processes. It is also used in the Kolmogorov–Smirnov test in the area of statistical inference.\n\n\n\n0.2 Definition\nA Brownian bridge is a stochastic process \\(X = \\{X_t: t \\in [0,1]\\}\\) with state space \\(\\mathbb{R}\\) that satisfies the following properties:\n\n\\(X_0 = 0\\) and \\(X_1 = 0\\) w.p.1\n\n\\(X\\) is a Gaussian process\n\n\\(E(X_t) = 0\\) for \\(t \\in [0,1]\\)\n\n\\(\\text{cov}(X_s, X_t) = \\min\\{s,t\\} - st\\) for \\(s,t \\in [0,1]\\)\n\nw.p.1 \\(t \\mapsto X_t\\) is continuous on \\([0,1]\\)\n\n\n\n0.3 Properties\n\nIf \\(B(t)\\) is a BM and \\(A\\) is any positive number, then \\(\\tilde{B}(t) = A^{1/2} B(t/A)\\) is also a BM.\n\nIf \\(B(t)\\) is a BM, then \\(\\tilde{B}^\\circ(u) = B(u) - u B(1), u \\in [0,1]\\), is a BB.\n\nIf \\(\\{B^\\circ(u)\\}\\) is a BB, then \\(\\tilde{B}(t) = (t + 1) B^\\circ(t/(t + 1))\\) is a BM.\n\nIf \\(\\{B(t)\\}\\) is a BM and \\(T\\) is a fixed positive number, then \\(\\tilde{B}(t) = B(T + t) - B(T)\\) is also a BM and independent of \\(\\{B(s), s \\in [0,T]\\}\\).\n\n\n\n0.4 Applications\n\nBrownian bridge appears as a limit of empirical distributions.\n\nIt can reduce simulation paths, improving computational efficiency when dealing with many underlying factors.\n\nIn path-dependent derivative pricing (e.g., barrier options), Brownian bridge helps estimate “knock-out” probabilities with reduced granularity.\n\n\n\n0.5 References\n\nBrownian Bridge — randomservices.org\n\nDonsker’s Theorem — MIT OCW\n\nLecture PDF on Applications"
+    "text": "In the most common formulation, the Brownian bridge process is obtained by taking a standard Brownian motion process \\(X\\), restricted to the interval \\([0,1]\\), and conditioning on the event that \\(X_1 = 0\\). Since also \\(X_0 = 0\\), the process is tied down at both ends, and so the process in between forms a bridge. The Brownian bridge turns out to be an interesting stochastic process with surprising applications, including a very important application to statistics.\nThe expected value of the bridge is zero, with variance \\(\\frac{t(T-t)}{T}\\), implying that the most uncertainty is in the middle of the bridge, with zero uncertainty at the nodes. The increments in a Brownian bridge are not independent.\nA Brownian bridge is the result of Donsker’s theorem (a functional extension of the CLT) in the area of empirical processes. It is also used in the Kolmogorov–Smirnov test in the area of statistical inference."
+  },
+  {
+    "objectID": "theory/statistics/stochastic-processes/brownian_bridge.html#definition",
+    "href": "theory/statistics/stochastic-processes/brownian_bridge.html#definition",
+    "title": "Brownian Bridge",
+    "section": "1 Definition",
+    "text": "1 Definition\nA Brownian bridge is a stochastic process \\(X = \\{X_t: t \\in [0,1]\\}\\) with state space \\(\\mathbb{R}\\) that satisfies the following properties:\n\n\\(X_0 = 0\\) and \\(X_1 = 0\\) w.p.1\n\n\\(X\\) is a Gaussian process\n\n\\(E(X_t) = 0\\) for \\(t \\in [0,1]\\)\n\n\\(\\text{cov}(X_s, X_t) = \\min\\{s,t\\} - st\\) for \\(s,t \\in [0,1]\\)\n\nw.p.1 \\(t \\mapsto X_t\\) is continuous on \\([0,1]\\)"
+  },
+  {
+    "objectID": "theory/statistics/stochastic-processes/brownian_bridge.html#properties",
+    "href": "theory/statistics/stochastic-processes/brownian_bridge.html#properties",
+    "title": "Brownian Bridge",
+    "section": "2 Properties",
+    "text": "2 Properties\n\nIf \\(B(t)\\) is a BM and \\(A\\) is any positive number, then \\(\\tilde{B}(t) = A^{1/2} B(t/A)\\) is also a BM.\n\nIf \\(B(t)\\) is a BM, then \\(\\tilde{B}^\\circ(u) = B(u) - u B(1), u \\in [0,1]\\), is a BB.\n\nIf \\(\\{B^\\circ(u)\\}\\) is a BB, then \\(\\tilde{B}(t) = (t + 1) B^\\circ(t/(t + 1))\\) is a BM.\n\nIf \\(\\{B(t)\\}\\) is a BM and \\(T\\) is a fixed positive number, then \\(\\tilde{B}(t) = B(T + t) - B(T)\\) is also a BM and independent of \\(\\{B(s), s \\in [0,T]\\}\\)."
+  },
+  {
+    "objectID": "theory/statistics/stochastic-processes/brownian_bridge.html#applications",
+    "href": "theory/statistics/stochastic-processes/brownian_bridge.html#applications",
+    "title": "Brownian Bridge",
+    "section": "3 Applications",
+    "text": "3 Applications\n\nBrownian bridge appears as a limit of empirical distributions.\n\nIt can reduce simulation paths, improving computational efficiency when dealing with many underlying factors.\n\nIn path-dependent derivative pricing (e.g., barrier options), Brownian bridge helps estimate “knock-out” probabilities with reduced granularity."
+  },
+  {
+    "objectID": "theory/statistics/stochastic-processes/brownian_bridge.html#references",
+    "href": "theory/statistics/stochastic-processes/brownian_bridge.html#references",
+    "title": "Brownian Bridge",
+    "section": "4 References",
+    "text": "4 References\n\nBrownian Bridge — randomservices.org\n\nDonsker’s Theorem — MIT OCW\n\nLecture PDF on Applications"
   },
   {
     "objectID": "theory/economics/index.html",

@@ -12,7 +12,7 @@ website:
           - text: "Economics"
             file: theory/economics/index.qmd
           - text: "Statistics"
-            file: theory/statistics/brownian_bridge.qmd
+            file: theory/statistics/index.qmd
       - text: "Case Studies"
         file: cases/index.qmd
       - text: "Reference"
