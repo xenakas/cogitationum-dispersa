@@ -8,7 +8,11 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Theory"
-        file: theory/economics/index.qmd
+        menu:
+          - text: "Economics"
+            file: theory/economics/index.qmd
+          - text: "Statistics"
+            file: theory/statistics/brownian_bridge.qmd
       - text: "Case Studies"
         file: cases/index.qmd
       - text: "Reference"

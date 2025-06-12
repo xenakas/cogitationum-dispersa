@@ -14,5 +14,9 @@
   "reference/index.qmd": {
     "index.html": "458c9a55",
     "index.tex": "727c8e02"
+  },
+  "theory/statistics/brownian_bridge.qmd": {
+    "brownian_bridge.html": "52509043",
+    "brownian_bridge.tex": "e91907cf"
   }
 }

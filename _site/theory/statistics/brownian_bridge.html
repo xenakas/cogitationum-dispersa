@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Case Studies – Cogitationum Dispersa</title>
+<title>Brownian Bridge – Cogitationum Dispersa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -78,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Cogitationum Dispersa</span>
     </a>
   </div>
@@ -89,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -98,21 +127,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-theory">    
         <li>
-    <a class="dropdown-item" href="../theory/economics/index.html">
+    <a class="dropdown-item" href="../../theory/economics/index.html">
  <span class="dropdown-text">Economics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../theory/statistics/brownian_bridge.html">
+    <a class="dropdown-item" href="../../theory/statistics/brownian_bridge.html">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../cases/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../cases/index.html"> 
 <span class="menu-text">Case Studies</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../reference/index.html"> 
+    <a class="nav-link" href="../../reference/index.html"> 
 <span class="menu-text">Reference</span></a>
   </li>  
 </ul>
@@ -131,16 +160,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#applied-case-studies" id="toc-applied-case-studies" class="nav-link active" data-scroll-target="#applied-case-studies"><span class="header-section-number">1</span> Applied Case Studies</a></li>
+  <li><a href="#brownian-bridge" id="toc-brownian-bridge" class="nav-link active" data-scroll-target="#brownian-bridge"><span class="header-section-number">0.1</span> Brownian Bridge</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition"><span class="header-section-number">0.2</span> Definition</a></li>
+  <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties"><span class="header-section-number">0.3</span> Properties</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">0.4</span> Applications</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">0.5</span> References</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="brownian_bridge.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Case Studies</h1>
+<h1 class="title">Brownian Bridge</h1>
 </div>
 
 
@@ -157,9 +190,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="applied-case-studies" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Applied Case Studies</h1>
-<p>Practical applications and analyses based on real-world data. Includes demand forecasting, segmentation models, and market simulations.</p>
+<section id="brownian-bridge" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="brownian-bridge"><span class="header-section-number">0.1</span> Brownian Bridge</h3>
+<p>In the most common formulation, the Brownian bridge process is obtained by taking a standard Brownian motion process <span class="math inline">\(X\)</span>, restricted to the interval <span class="math inline">\([0,1]\)</span>, and conditioning on the event that <span class="math inline">\(X_1 = 0\)</span>. Since also <span class="math inline">\(X_0 = 0\)</span>, the process is tied down at both ends, and so the process in between forms a bridge. The Brownian bridge turns out to be an interesting stochastic process with surprising applications, including a very important application to statistics.</p>
+<p>The expected value of the bridge is zero, with variance <span class="math inline">\(\frac{t(T-t)}{T}\)</span>, implying that the most uncertainty is in the middle of the bridge, with zero uncertainty at the nodes. The increments in a Brownian bridge are not independent.</p>
+<p>A Brownian bridge is the result of Donsker’s theorem (a functional extension of the CLT) in the area of empirical processes. It is also used in the Kolmogorov–Smirnov test in the area of statistical inference.</p>
+<hr>
+</section>
+<section id="definition" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="definition"><span class="header-section-number">0.2</span> Definition</h3>
+<p>A Brownian bridge is a stochastic process <span class="math inline">\(X = \{X_t: t \in [0,1]\}\)</span> with state space <span class="math inline">\(\mathbb{R}\)</span> that satisfies the following properties:</p>
+<ul>
+<li><span class="math inline">\(X_0 = 0\)</span> and <span class="math inline">\(X_1 = 0\)</span> w.p.1<br>
+</li>
+<li><span class="math inline">\(X\)</span> is a Gaussian process<br>
+</li>
+<li><span class="math inline">\(E(X_t) = 0\)</span> for <span class="math inline">\(t \in [0,1]\)</span><br>
+</li>
+<li><span class="math inline">\(\text{cov}(X_s, X_t) = \min\{s,t\} - st\)</span> for <span class="math inline">\(s,t \in [0,1]\)</span><br>
+</li>
+<li>w.p.1 <span class="math inline">\(t \mapsto X_t\)</span> is continuous on <span class="math inline">\([0,1]\)</span></li>
+</ul>
+</section>
+<section id="properties" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="properties"><span class="header-section-number">0.3</span> Properties</h3>
+<ol type="1">
+<li>If <span class="math inline">\(B(t)\)</span> is a BM and <span class="math inline">\(A\)</span> is any positive number, then <span class="math inline">\(\tilde{B}(t) = A^{1/2} B(t/A)\)</span> is also a BM.<br>
+</li>
+<li>If <span class="math inline">\(B(t)\)</span> is a BM, then <span class="math inline">\(\tilde{B}^\circ(u) = B(u) - u B(1), u \in [0,1]\)</span>, is a BB.<br>
+</li>
+<li>If <span class="math inline">\(\{B^\circ(u)\}\)</span> is a BB, then <span class="math inline">\(\tilde{B}(t) = (t + 1) B^\circ(t/(t + 1))\)</span> is a BM.<br>
+</li>
+<li>If <span class="math inline">\(\{B(t)\}\)</span> is a BM and <span class="math inline">\(T\)</span> is a fixed positive number, then <span class="math inline">\(\tilde{B}(t) = B(T + t) - B(T)\)</span> is also a BM and independent of <span class="math inline">\(\{B(s), s \in [0,T]\}\)</span>.</li>
+</ol>
+</section>
+<section id="applications" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="applications"><span class="header-section-number">0.4</span> Applications</h3>
+<ol type="1">
+<li>Brownian bridge appears as a limit of empirical distributions.<br>
+</li>
+<li>It can reduce simulation paths, improving computational efficiency when dealing with many underlying factors.<br>
+</li>
+<li>In path-dependent derivative pricing (e.g., barrier options), Brownian bridge helps estimate “knock-out” probabilities with reduced granularity.</li>
+</ol>
+</section>
+<section id="references" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="references"><span class="header-section-number">0.5</span> References</h3>
+<ul>
+<li><a href="http://www.randomservices.org/random/brown/Bridge.html">Brownian Bridge — randomservices.org</a><br>
+</li>
+<li><a href="https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/lecture-slides/MIT18_650F16_Testing_GF.pdf">Donsker’s Theorem — MIT OCW</a><br>
+</li>
+<li><a href="https://dspace.mit.edu/bitstream/handle/1721.1/37302/18-175Spring-2005/NR/rdonlyres/1974B061-49AB-4653-9696-1F5CDB1B690D/0/lecture29.pdf">Lecture PDF on Applications</a></li>
+</ul>
 
 
 </section>
